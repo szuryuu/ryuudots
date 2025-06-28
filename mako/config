@@ -1,12 +1,36 @@
-# Colors
-
+# Mako Monochrome Theme - sesuai dengan Waybar dan Kitty
 default-timeout=10000
-border-radius=5
-background-color=#1e1e2ebf
-text-color=#cdd6f4bf
-border-color=#89dcebbf
-progress-color=over #313244bf
+border-radius=0
+width=350
+margin=10
+padding=15
+font=Hack Nerd Font 12
+
+# Monochrome Colors
+background-color=#000000
+text-color=#ffffff
+border-color=#ffffff
+border-size=2
+progress-color=over #808080
+
+# Urgency levels
+[urgency=low]
+background-color=#000000
+text-color=#e5e5e5
+border-color=#808080
+
+[urgency=normal]
+background-color=#000000
+text-color=#ffffff
+border-color=#ffffff
 
 [urgency=high]
-border-color=#fab387bf
+background-color=#1a1a1a
+text-color=#ffffff
+border-color=#ffffff
+border-size=3
 ignore-timeout=1
+
+# Basic settings
+layer=overlay
+anchor=top-right

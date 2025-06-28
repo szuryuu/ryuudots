@@ -1,0 +1,24 @@
+/* Tema Monochrome untuk Waybar */
+@define-color white #ffffff;
+@define-color light-gray #e5e5e5;
+@define-color medium-gray #b0b0b0;
+@define-color dark-gray #808080;
+@define-color darker-gray #404040;
+@define-color black #000000;
+@define-color very-dark-gray #1a1a1a;
+
+/* Mapping warna untuk kompatibilitas dengan style.css yang ada */
+@define-color text #ffffff;
+@define-color base #000000;
+@define-color crust #1a1a1a;
+
+/* Warna untuk berbagai elemen */
+@define-color sapphire #ffffff;
+@define-color red #808080;
+@define-color green #e5e5e5;
+@define-color maroon #b0b0b0;
+@define-color yellow #ffffff;
+@define-color blue #e5e5e5;
+@define-color peach #b0b0b0;
+@define-color teal #ffffff;
+@define-color sky #e5e5e5;
