@@ -1,4 +1,4 @@
-@import "monochrome.css";
+@import "mocha.css";
 
 * {
     border: none;
@@ -10,9 +10,9 @@
 }
 
 window#waybar {
-    background: #000000;
-    color: #ffffff;
-    opacity: 0.85;
+    background: @base;
+    color: @text;
+    opacity: 0.85
 }
 
 window#waybar.empty #window {
@@ -21,30 +21,29 @@ window#waybar.empty #window {
 
 #workspaces button {
     padding: 5px;
-    color: #ffffff;
+    color: @sapphire;
     /* margin-right: 5px; */
 }
 
 #workspaces button.active {
-    color: #000000;
-    background: #ffffff;
+    color: @sapphire;
 }
 
 #workspaces button.focused {
-    color: #000000;
-    background: #e5e5e5;
+    color: @sapphire;
+    background: @base;
     /* border-radius: 10px; */
 }
 
 #workspaces button.urgent {
-    color: #ffffff;
-    background: #404040;
+    color: @red;
+    background: @base;
     /* border-radius: 10px; */
 }
 
 #workspaces button:hover {
-    background: #1a1a1a;
-    color: #ffffff; 
+    background: @crust;
+    color: @text; 
     /* border-radius: 10px; */
 }
 
@@ -60,16 +59,16 @@ window#waybar.empty #window {
 #workspaces,
 #tray,
 #backlight {
-    background: #000000;
+    background: @base;
     padding: 10px 0px;
     margin: 0px 0px;
-    border-top: 2px dashed #ffffff;
-    border-bottom: 2px dashed #ffffff;
+    border-top: 2px dashed @text;
+    border-bottom: 2px dashed @text;
 }
 
 #backlight {
     /* border-radius: 10px 0px 0px 10px; */
-    color: #e5e5e5;
+    color: @green;
     border-bottom: 0px;
 }
 
@@ -77,11 +76,10 @@ window#waybar.empty #window {
     /* border-radius: 10px; */
     /* margin-right: 10px; */
     border-top: 0px;
-    color: #ffffff;
 }
 
 #workspaces {
-    background: #000000;
+    background: @base;
     /* border-radius: 10px; */
     /* margin-left: 10px; */
     padding-right: 0px;
@@ -90,19 +88,19 @@ window#waybar.empty #window {
 
 #cpu {
     /* border-radius: 0px 10px 10px 0px; */
-    color: #b0b0b0;
+    color: @maroon;
     border-bottom: 0px;
 }
 
 #memory {
     /* border-radius: 10px 0px 0px 10px; */
-    color: #808080;
+    color: @red;
     border-bottom: 0px;
     margin-top: 5px;
 }
 
 #window {
-    color: #ffffff;
+    color: @yellow;
     padding-left: 5px;
     border-bottom: 0px;
     border-top: 0px;
@@ -111,40 +109,40 @@ window#waybar.empty #window {
 
 #clock {
     /* border-radius: 10px 10px 10px 10px; */
-    color: #e5e5e5;
+    color: @blue;
     border-bottom: 0px;
     margin-top: 5px;
 }
 
 #network {
-    color: #b0b0b0;
+    color:  @peach;
     /* border-radius: 10px 0px 0px 10px; */
     border-bottom: 0px;
 }
 
 #pulseaudio {
-    color: #ffffff;
+    color: @teal;
     border-bottom: 0px;
 }
 
 #pulseaudio.microphone {
-    color: #e5e5e5;
+    color: @sky;
     /* border-radius: 0px 10px 10px 0px; */
     margin-bottom: 5px;
-    border-bottom: 2px dashed #ffffff;
+    border-bottom: 2px dashed @text;
 }
 
 #battery {
-    color: #ffffff;
+    color: @yellow;
     /* border-radius: 0px 10px 10px 0px; */
 }
 
 #custom-spotify {
-    color: #e5e5e5;
+    color: @green;
 }
 
 #custom-logout {
-    color: #e5e5e5;
+    color: @sky;
     margin-bottom: 5px;
 }
 

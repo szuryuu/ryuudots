@@ -89,7 +89,12 @@ yay -S --noconfirm \
   catppuccin-gtk-theme-mocha \
   catppuccin-cursors-mocha \
   qt5-wayland \
-  qt6-wayland
+  qt6-wayland \
+  nvidia \
+  nvidia-utils \
+  vulkan-tools \
+  vulkan-icd-loader \
+  vulkan-intel
 
 print_success "Packages installed successfully"
 
