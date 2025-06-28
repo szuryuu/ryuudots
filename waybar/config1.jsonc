@@ -7,18 +7,63 @@
   "gtk-layer-shell": true,
   "height": 0,
   "modules-left": [
-    "clock",
-    "hyprland/workspaces",
-    "tray"
+    "group/top"
   ],
   "modules-center": [
-    "hyprland/window"
+    "group/middle"
   ],
   "modules-right": [
-    "backlight",
-    "pulseaudio",
-    "pulseaudio#microphone"
+    "group/bottom"
   ],
+  //Groups
+  "group/top": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/arrow-left",
+      "clock",
+      "hyprland/workspaces",
+      "tray"
+    ]
+  },
+  "group/middle": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "hyprland/window"
+    ]
+  },
+  "group/bottom": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/arrow-right",
+      "backlight",
+      "pulseaudio",
+      "pulseaudio#microphone"
+    ]
+  },
+  //icon
+  "custom/arrow-left": {
+    "format": "  ",
+    "tooltip": false,
+    "rotate": 90
+  },
+  "custom/arrow-right": {
+    "format": "  ",
+    "tooltip": false,
+    "rotate": 90
+  },
+  //modules
   "hyprland/window": {
     "format": "󰣇 {}",
     "max-length": 50,
